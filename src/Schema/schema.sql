@@ -2,14 +2,15 @@ create database Hotel_Reservation;
 use hotel_reservation;
 CREATE TABLE room_type(
  room_type int PRIMARY KEY,
- room_desc VARCHAR(10000)
- );
+ room_desc VARCHAR(10000));
+
  CREATE TABLE hotel(
  hotel_id VARCHAR(255) PRIMARY KEY,
  hotel_name VARCHAR(255) NOT NULL,
  hotel_grade int NOT NULL,
  hotel_location VARCHAR(255),
  hotel_phone VARCHAR(255));
+
 CREATE TABLE room(
  room_id int PRIMARY KEY,
  room_price int NOT NULL,
